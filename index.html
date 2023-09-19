@@ -41,7 +41,7 @@
     <header class="container mx-auto">
         <!-- Navbar -->
         <nav class="my-10">
-            <div class="navbar px-8 py-8 rounded-full bg-background-pink">
+            <div class="navbar px-8 py-8 rounded-full lg:bg-background-pink">
                 <div class="navbar-start">
                     <ul class="hidden lg:flex space-x-5 text-lg text-white font-semibold">
                         <li><a href="">Home</a></li>
@@ -49,35 +49,34 @@
                         <li><a href="">Shop</a></li>
                         <li><a href="">All Fruits</a></li>
                     </ul>
+                    <div class="lg:hidden flex items-center">
+                        <img src="images/logo.png" alt="">
+                        <h3 class="text-4xl lg:text-white">Fruit Burst</h3>
+                    </div>
                     <!-- <a class="btn btn-ghost normal-case text-xl">daisyUI</a> -->
                 </div>
-                <div class="navbar-center lg:flex">
+                <div class="navbar-center hidden lg:flex">
                     <img src="images/logo.png" alt="">
-                    <h3 class="text-4xl text-white">Fruit Burst</h3>
+                    <h3 class="text-4xl lg:text-white">Fruit Burst</h3>
                 </div>
                 <div class="navbar-end relative">
-                    <input type="text" placeholder="Search here" class="input rounded-full w-9/12 max-w-xs" />
-                    <i class="absolute right-5 fa-solid fa-magnifying-glass"></i>
+                    <input type="text" placeholder="Search here" class="input hidden lg:block rounded-full w-9/12 max-w-xs" />
+                    <i class="absolute hidden lg:block right-5 fa-solid fa-magnifying-glass"></i>
                     <!-- Drop Down -->
                     <div class="dropdown">
                         <label tabindex="0" class="btn btn-ghost lg:hidden">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24"
                                 stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                     d="M4 6h16M4 12h8m-8 6h16" />
                             </svg>
                         </label>
                         <ul tabindex="0"
-                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-                            <li><a>Item 1</a></li>
-                            <li>
-                                <a>Parent</a>
-                                <ul class="p-2">
-                                    <li><a>Submenu 1</a></li>
-                                    <li><a>Submenu 2</a></li>
-                                </ul>
-                            </li>
-                            <li><a>Item 3</a></li>
+                            class="relative right-8 text-xl dropdown-content mt-3 pl-6 pr-16 py-12 shadow bg-background-pink text-white rounded-box ">
+                            <li><a href="">Home</a></li>
+                            <li><a href="">About us</a></li>
+                            <li><a href="">Shop</a></li>
+                            <li><a href="">All Fruits</a></li>
                         </ul>
                     </div>
                 </div>
