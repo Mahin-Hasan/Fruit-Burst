@@ -29,6 +29,9 @@
                 extend: {
                     colors: {
                         'background-pink': '#F85559',
+                        'gradient-start': '#121212',
+                        'gradient-end': '#12121200',
+                        'gradient-dark': '#00000080',
                     }
                 }
             }
@@ -40,7 +43,7 @@
 <body class="font-lato">
     <header class="container mx-auto">
         <!-- Navbar -->
-        <nav class="my-10">
+        <nav class="lg:my-10">
             <div class="navbar px-8 py-8 rounded-full lg:bg-background-pink">
                 <div class="navbar-start">
                     <ul class="hidden lg:flex space-x-5 text-lg text-white font-semibold">
@@ -51,7 +54,7 @@
                     </ul>
                     <div class="lg:hidden flex items-center">
                         <img src="images/logo.png" alt="">
-                        <h3 class="text-4xl lg:text-white">Fruit Burst</h3>
+                        <h3 class="text-2xl md:text-3xl">Fruit Burst</h3>
                     </div>
                     <!-- <a class="btn btn-ghost normal-case text-xl">daisyUI</a> -->
                 </div>
@@ -82,6 +85,46 @@
                 </div>
             </div>
         </nav>
+        <!-- banner section -->
+        <section class="mb-4">
+            <div class="mx-2 md:m-0">
+                <div class="carousel w-full">
+                    <div id="slide1" class="carousel-item relative w-full">
+                      <img src="images/banner1.png" class="w-full rounded-xl" />
+                      <div class="absolute lg:pt-20 w-full h-full bg-gradient-dark text-center space-y-2 lg:space-y-6 text-white rounded-xl">
+                        <h3 class="text-xl pt-3 lg:text-7xl font-extrabold">Exotic tastes at your <br> doorstep</h3>
+                        <p class="text-sm lg:text-xl">We supply highly quality organic products</p>
+                        <button class="btn bg-background-pink text-white border-0">Shop Now</button>
+                      </div>
+                      <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide4" class="btn btn-circle">❮</a> 
+                        <a href="#slide2" class="btn btn-circle">❯</a>
+                      </div>
+                    </div> 
+                    <div id="slide2" class="carousel-item relative w-full">
+                        <img src="images/banner2.png" class="w-full" />
+                        <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide1" class="btn btn-circle">❮</a> 
+                        <a href="#slide3" class="btn btn-circle">❯</a>
+                      </div>
+                    </div> 
+                    <div id="slide3" class="carousel-item relative w-full">
+                        <img src="images/banner3.png" class="w-full" />
+                        <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide2" class="btn btn-circle">❮</a> 
+                        <a href="#slide4" class="btn btn-circle">❯</a>
+                      </div>
+                    </div> 
+                    <div id="slide4" class="carousel-item relative w-full">
+                        <img src="images/banner4.png" class="w-full" />
+                        <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide3" class="btn btn-circle">❮</a> 
+                        <a href="#slide1" class="btn btn-circle">❯</a>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+        </section>
     </header>
     <main>
 
