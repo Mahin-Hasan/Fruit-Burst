@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fruit Burst</title>
+    <!-- Fav icon -->
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
     <!-- Font awesome icons -->
     <script src="https://kit.fontawesome.com/d64f0c1321.js" crossorigin="anonymous"></script>
     <!-- Tailwind & Daisy ui -->
@@ -20,57 +22,67 @@
             font-family: 'Lato', sans-serif;
         }
     </Style>
+    <!-- tailwind custom color -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'background-pink': '#F85559',
+                    }
+                }
+            }
+        }
+    </script>
+
 </head>
 
 <body class="font-lato">
     <header class="container mx-auto">
         <!-- Navbar -->
-        <div class="navbar bg-base-100">
-            <div class="navbar-start">
-                
-                <a class="btn btn-ghost normal-case text-xl">daisyUI</a>
-            </div>
-            <div class="navbar-center hidden lg:flex">
-                <ul class="menu menu-horizontal px-1">
-                    <li><a>Item 1</a></li>
-                    <li tabindex="0">
-                        <details>
-                            <summary>Parent</summary>
-                            <ul class="p-2">
-                                <li><a>Submenu 1</a></li>
-                                <li><a>Submenu 2</a></li>
-                            </ul>
-                        </details>
-                    </li>
-                    <li><a>Item 3</a></li>
-                </ul>
-            </div>
-            <div class="navbar-end">
-                <a class="btn">Button</a>
-                <!-- Drop Down -->
-                <div class="dropdown">
-                    <label tabindex="0" class="btn btn-ghost lg:hidden">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
-                            stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M4 6h16M4 12h8m-8 6h16" />
-                        </svg>
-                    </label>
-                    <ul tabindex="0"
-                        class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-                        <li><a>Item 1</a></li>
-                        <li>
-                            <a>Parent</a>
-                            <ul class="p-2">
-                                <li><a>Submenu 1</a></li>
-                                <li><a>Submenu 2</a></li>
-                            </ul>
-                        </li>
-                        <li><a>Item 3</a></li>
+        <nav class="my-10">
+            <div class="navbar px-8 py-8 rounded-full bg-background-pink">
+                <div class="navbar-start">
+                    <ul class="hidden lg:flex space-x-5 text-lg text-white font-semibold">
+                        <li><a href="">Home</a></li>
+                        <li><a href="">About us</a></li>
+                        <li><a href="">Shop</a></li>
+                        <li><a href="">All Fruits</a></li>
                     </ul>
+                    <!-- <a class="btn btn-ghost normal-case text-xl">daisyUI</a> -->
+                </div>
+                <div class="navbar-center lg:flex">
+                    <img src="images/logo.png" alt="">
+                    <h3 class="text-4xl text-white">Fruit Burst</h3>
+                </div>
+                <div class="navbar-end relative">
+                    <input type="text" placeholder="Search here" class="input rounded-full w-9/12 max-w-xs" />
+                    <i class="absolute right-5 fa-solid fa-magnifying-glass"></i>
+                    <!-- Drop Down -->
+                    <div class="dropdown">
+                        <label tabindex="0" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </label>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                            <li><a>Item 1</a></li>
+                            <li>
+                                <a>Parent</a>
+                                <ul class="p-2">
+                                    <li><a>Submenu 1</a></li>
+                                    <li><a>Submenu 2</a></li>
+                                </ul>
+                            </li>
+                            <li><a>Item 3</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-        </div>
+        </nav>
     </header>
     <main>
 
