@@ -96,7 +96,8 @@
                             class="absolute lg:pt-20 w-full h-full bg-gradient-dark text-center space-y-2 lg:space-y-6 text-white rounded-xl">
                             <h3 class="text-xl pt-3 lg:text-7xl font-extrabold">Exotic tastes at your <br> doorstep</h3>
                             <p class="text-sm lg:text-xl">We supply highly quality organic products</p>
-                            <button class="btn bg-background-pink text-white border-0">Shop Now</button>
+                            <button class="btn bg-background-pink text-white hover:bg-red-700 border-0">Shop
+                                Now</button>
                         </div>
                         <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                             <a href="#slide4" class="btn btn-circle">❮</a>
@@ -109,7 +110,8 @@
                             class="absolute lg:pt-20 w-full h-full bg-gradient-dark text-center space-y-2 lg:space-y-6 text-white rounded-xl">
                             <h3 class="text-xl pt-3 lg:text-7xl font-extrabold">Exotic tastes at your <br> doorstep</h3>
                             <p class="text-sm lg:text-xl">We supply highly quality organic products</p>
-                            <button class="btn bg-background-pink text-white border-0">Shop Now</button>
+                            <button class="btn bg-background-pink text-white hover:bg-red-700 border-0">Shop
+                                Now</button>
                         </div>
                         <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                             <a href="#slide1" class="btn btn-circle">❮</a>
@@ -122,7 +124,8 @@
                             class="absolute lg:pt-20 w-full h-full bg-gradient-dark text-center space-y-2 lg:space-y-6 text-white rounded-xl">
                             <h3 class="text-xl pt-3 lg:text-7xl font-extrabold">Exotic tastes at your <br> doorstep</h3>
                             <p class="text-sm lg:text-xl">We supply highly quality organic products</p>
-                            <button class="btn bg-background-pink text-white border-0">Shop Now</button>
+                            <button class="btn bg-background-pink text-white hover:bg-red-700 border-0">Shop
+                                Now</button>
                         </div>
                         <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                             <a href="#slide2" class="btn btn-circle">❮</a>
@@ -135,7 +138,8 @@
                             class="absolute lg:pt-20 w-full h-full bg-gradient-dark text-center space-y-2 lg:space-y-6 text-white rounded-xl">
                             <h3 class="text-xl pt-3 lg:text-7xl font-extrabold">Exotic tastes at your <br> doorstep</h3>
                             <p class="text-sm lg:text-xl">We supply highly quality organic products</p>
-                            <button class="btn bg-background-pink text-white border-0">Shop Now</button>
+                            <button class="btn bg-background-pink text-white hover:bg-red-700 border-0">Shop
+                                Now</button>
                         </div>
                         <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                             <a href="#slide3" class="btn btn-circle">❮</a>
@@ -173,14 +177,14 @@
     </header>
     <main class="container mx-auto mt-32">
         <!-- Deal of the day -->
-        <section class="flex justify-between">
-            <div class="space-y-4">
-                <h3 class="text-5xl	font-extrabold">Deal of the day</h3>
-                <p>Contrary to popular belief, is not simply random text. It has roots in a piece of classical <br>
+        <section class="flex text-center md:text-start flex-col lg:flex-row justify-between mb-12">
+            <div class="space-y-4 mb-8">
+                <h3 class="text-3xl md:text-5xl	font-extrabold">Deal of the day</h3>
+                <p class="px-8 md:px-0">Contrary to popular belief, is not simply random text. It has roots in a piece of classical <br class="hidden lg:block">
                     Latin literature from 45 BC, making it over 2000 years old.</p>
             </div>
             <div class="">
-                <div class="flex gap-5">
+                <div class="flex justify-center gap-5">
                     <div>
                         <div class="flex flex-col">
                             <span class="countdown font-mono text-5xl font-extrabold">
@@ -233,6 +237,148 @@
                 </div>
             </div>
         </section>
+        <!-- Cards Section -->
+        <div class="grid gap-10 grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
+            <!-- First review -->
+            <div class="card bg-base-100 p-8 shadow-lg border border-gray-300">
+                <figure><img class="w-36" src="images/fruit6.png" alt="Shoes" /></figure>
+                <div class="card-body space-y-3 text-center">
+                    <h5 class="text-2xl font-bold">12.90$ - 18.85$</h5>
+                    <p>Apples</p>
+                    <div class="rating justify-center rating-half">
+                        <input type="radio" name="rating-10" class="rating-hidden" />
+                        <input type="radio" name="rating-10" class="bg-background-pink mask mask-star-2 mask-half-1" />
+                        <input type="radio" name="rating-10" class="bg-background-pink mask mask-star-2 mask-half-2" />
+                        <input type="radio" name="rating-10" class="bg-background-pink mask mask-star-2 mask-half-1" checked />
+                        <input type="radio" name="rating-10" class="bg-background-pink mask mask-star-2 mask-half-2" />
+                        <input type="radio" name="rating-10" class="bg-background-pink mask mask-star-2 mask-half-1" />
+                        <input type="radio" name="rating-10" class="bg-background-pink mask mask-star-2 mask-half-2" />
+                        <input type="radio" name="rating-10" class="bg-background-pink mask mask-star-2 mask-half-1" />
+                        <input type="radio" name="rating-10" class="bg-background-pink mask mask-star-2 mask-half-2" />
+                        <input type="radio" name="rating-10" class="bg-background-pink mask mask-star-2 mask-half-1" />
+                        <input type="radio" name="rating-10" class="bg-background-pink mask mask-star-2 mask-half-2" />
+                    </div>
+                    <!-- Trying modal -->
+                    <!-- Open the modal using ID.showModal() method -->
+                    <button class="text-background-pink" onclick="my_modal_5.showModal()">Details</button>
+                    <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+                        <div class="modal-box">
+                            <div class="card bg-base-100 p-8">
+                                <figure><img class="w-36" src="images/fruit6.png" alt="Shoes" /></figure>
+                                <div class="card-body space-y-3 text-center">
+                                    <h5 class="text-2xl font-bold">Apples</h5>
+                                    <p>Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                                    <div class="rating justify-center rating-half">
+                                        <input type="radio" name="rating-10" class="rating-hidden" />
+                                        <input type="radio" name="rating-10"
+                                            class="bg-background-pink mask mask-star-2 mask-half-1" />
+                                        <input type="radio" name="rating-10"
+                                            class="bg-background-pink mask mask-star-2 mask-half-2" />
+                                        <input type="radio" name="rating-10"
+                                            class="bg-background-pink mask mask-star-2 mask-half-1" checked />
+                                        <input type="radio" name="rating-10"
+                                            class="bg-background-pink mask mask-star-2 mask-half-2" />
+                                        <input type="radio" name="rating-10"
+                                            class="bg-background-pink mask mask-star-2 mask-half-1" />
+                                        <input type="radio" name="rating-10"
+                                            class="bg-background-pink mask mask-star-2 mask-half-2" />
+                                        <input type="radio" name="rating-10"
+                                            class="bg-background-pink mask mask-star-2 mask-half-1" />
+                                        <input type="radio" name="rating-10"
+                                            class="bg-background-pink mask mask-star-2 mask-half-2" />
+                                        <input type="radio" name="rating-10"
+                                            class="bg-background-pink mask mask-star-2 mask-half-1" />
+                                        <input type="radio" name="rating-10"
+                                            class="bg-background-pink mask mask-star-2 mask-half-2" />
+                                    </div>
+                                </div>
+                                <div class="modal-action justify-center">
+                                    <form method="dialog">
+                                        <!-- if there is a button in form, it will close the modal -->
+                                        <button class="btn">Close</button>
+                                    </form>
+                                    <button class="btn bg-background-pink text-white hover:bg-red-700">Buy Now</button>
+                                </div>
+                            </div>
+                    </dialog>
+                </div>
+            </div>
+            <!-- 2nd review -->
+            <div class="card bg-base-100 p-8 shadow-lg border border-gray-300">
+                <figure><img class="w-36" src="images/fruit6.png" alt="Shoes" /></figure>
+                <div class="card-body space-y-3 text-center">
+                    <h5 class="text-2xl font-bold">12.90$ - 18.85$</h5>
+                    <p>Apples</p>
+                    <div class="rating justify-center rating-half">
+                        <input type="radio" name="rating-10" class="rating-hidden" />
+                        <input type="radio" name="rating-10" class="bg-background-pink mask mask-star-2 mask-half-1" />
+                        <input type="radio" name="rating-10" class="bg-background-pink mask mask-star-2 mask-half-2" />
+                        <input type="radio" name="rating-10" class="bg-background-pink mask mask-star-2 mask-half-1"
+                            checked />
+                        <input type="radio" name="rating-10" class="bg-background-pink mask mask-star-2 mask-half-2" />
+                        <input type="radio" name="rating-10" class="bg-background-pink mask mask-star-2 mask-half-1" />
+                        <input type="radio" name="rating-10" class="bg-background-pink mask mask-star-2 mask-half-2" />
+                        <input type="radio" name="rating-10" class="bg-background-pink mask mask-star-2 mask-half-1" />
+                        <input type="radio" name="rating-10" class="bg-background-pink mask mask-star-2 mask-half-2" />
+                        <input type="radio" name="rating-10" class="bg-background-pink mask mask-star-2 mask-half-1" />
+                        <input type="radio" name="rating-10" class="bg-background-pink mask mask-star-2 mask-half-2" />
+                    </div>
+                    <div class="text-center text-background-pink">
+                        <a href="">Details</a>
+                    </div>
+                </div>
+            </div>
+            <!-- 3rd review -->
+            <div class="card bg-base-100 p-8 shadow-lg border border-gray-300">
+                <figure><img class="w-36" src="images/fruit6.png" alt="Shoes" /></figure>
+                <div class="card-body space-y-3 text-center">
+                    <h5 class="text-2xl font-bold">12.90$ - 18.85$</h5>
+                    <p>Apples</p>
+                    <div class="rating justify-center rating-half">
+                        <input type="radio" name="rating-10" class="rating-hidden" />
+                        <input type="radio" name="rating-10" class="bg-background-pink mask mask-star-2 mask-half-1" />
+                        <input type="radio" name="rating-10" class="bg-background-pink mask mask-star-2 mask-half-2" />
+                        <input type="radio" name="rating-10" class="bg-background-pink mask mask-star-2 mask-half-1"
+                            checked />
+                        <input type="radio" name="rating-10" class="bg-background-pink mask mask-star-2 mask-half-2" />
+                        <input type="radio" name="rating-10" class="bg-background-pink mask mask-star-2 mask-half-1" />
+                        <input type="radio" name="rating-10" class="bg-background-pink mask mask-star-2 mask-half-2" />
+                        <input type="radio" name="rating-10" class="bg-background-pink mask mask-star-2 mask-half-1" />
+                        <input type="radio" name="rating-10" class="bg-background-pink mask mask-star-2 mask-half-2" />
+                        <input type="radio" name="rating-10" class="bg-background-pink mask mask-star-2 mask-half-1" />
+                        <input type="radio" name="rating-10" class="bg-background-pink mask mask-star-2 mask-half-2" />
+                    </div>
+                    <div class="text-center text-background-pink">
+                        <a href="">Details</a>
+                    </div>
+                </div>
+            </div>
+            <!-- 4th review -->
+            <div class="card bg-base-100 p-8 shadow-lg border border-gray-300">
+                <figure><img class="w-36" src="images/fruit6.png" alt="Shoes" /></figure>
+                <div class="card-body space-y-3 text-center">
+                    <h5 class="text-2xl font-bold">12.90$ - 18.85$</h5>
+                    <p>Apples</p>
+                    <div class="rating justify-center rating-half">
+                        <input type="radio" name="rating-10" class="rating-hidden" />
+                        <input type="radio" name="rating-10" class="bg-background-pink mask mask-star-2 mask-half-1" />
+                        <input type="radio" name="rating-10" class="bg-background-pink mask mask-star-2 mask-half-2" />
+                        <input type="radio" name="rating-10" class="bg-background-pink mask mask-star-2 mask-half-1"
+                            checked />
+                        <input type="radio" name="rating-10" class="bg-background-pink mask mask-star-2 mask-half-2" />
+                        <input type="radio" name="rating-10" class="bg-background-pink mask mask-star-2 mask-half-1" />
+                        <input type="radio" name="rating-10" class="bg-background-pink mask mask-star-2 mask-half-2" />
+                        <input type="radio" name="rating-10" class="bg-background-pink mask mask-star-2 mask-half-1" />
+                        <input type="radio" name="rating-10" class="bg-background-pink mask mask-star-2 mask-half-2" />
+                        <input type="radio" name="rating-10" class="bg-background-pink mask mask-star-2 mask-half-1" />
+                        <input type="radio" name="rating-10" class="bg-background-pink mask mask-star-2 mask-half-2" />
+                    </div>
+                    <div class="text-center text-background-pink">
+                        <a href="">Details</a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
     <footer>
 
