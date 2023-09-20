@@ -21,6 +21,13 @@
         .font-lato {
             font-family: 'Lato', sans-serif;
         }
+
+        .team-background {
+            /* background-image: url(images/banner1.png); */
+            /* background: linear-gradient(rgba(18, 18, 18, 0.70), #171717da), url(images/banner1.png); */
+            background: linear-gradient(rgba(255, 255, 255, 0), #000000c9), url(images/banner1.png);
+            background-size: cover;
+        }
     </Style>
     <!-- tailwind custom color -->
     <script>
@@ -151,7 +158,8 @@
         </section>
         <!-- Floating Fruits Container -->
         <section class="relative">
-            <div class="-mt-28 hidden lg:flex justify-between space-x-3 bg-white w-10/12 mx-auto px-10 py-6 rounded-xl">
+            <div
+                class="-mt-28 hidden shadow-lg lg:flex justify-between space-x-3 bg-white w-10/12 mx-auto px-10 py-6 rounded-xl">
                 <div class="text-center">
                     <img src="images/fruit1.png" alt="">
                     <p class="text-xl font-semibold">Grape</p>
@@ -543,7 +551,72 @@
                 <button class="btn bg-background-pink text-white hover:bg-red-700 border-0">Shop
                     Now</button>
             </div>
-            
+        </section>
+        <!-- Meet the team section -->
+        <section class="team-background rounded-lg mb-4">
+            <div>
+                <div class="text-center pt-28 text-white space-y-5">
+                    <h2 class="text-5xl font-extrabold">Meet the team section</h2>
+                    <p>Contrary to popular belief, is not simply random text. It has roots in a piece of classical <br>
+                        Latin
+                        literature from 45 BC, making it over 2000 years old.</p>
+                </div>
+                <div class="lg:px-36 pb-12 grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
+                    <!-- 4 cards -->
+                    <!-- First card -->
+                    <div class="card p-5 text-center shadow-xl">
+                        <figure><img src="images/member1.png" /></figure>
+                        <div class="card-body text-white justify-center">
+                            <h5 class="text-2xl font-bold">Awlad Hossain</h5>
+                            <p>Fruits Expert</p>
+                            <div class="space-x-1">
+                                <i class="bg-background-pink p-2 rounded-full  fa-brands fa-facebook"></i>
+                                <i class="bg-background-pink p-2 rounded-full fa-brands fa-twitter"></i>
+                                <i class="bg-background-pink p-2 rounded-full fa-brands fa-linkedin-in"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 2nd card -->
+                    <div class="card p-5 text-center shadow-xl">
+                        <figure><img src="images/member2.png" /></figure>
+                        <div class="card-body text-white justify-center">
+                            <h5 class="text-2xl font-bold">Safia Chowdhury</h5>
+                            <p>Fruits Expert</p>
+                            <div class="space-x-1">
+                                <i class="bg-background-pink p-2 rounded-full  fa-brands fa-facebook"></i>
+                                <i class="bg-background-pink p-2 rounded-full fa-brands fa-twitter"></i>
+                                <i class="bg-background-pink p-2 rounded-full fa-brands fa-linkedin-in"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 3th card -->
+                    <div class="card p-5 text-center shadow-xl">
+                        <figure><img src="images/member3.png" /></figure>
+                        <div class="card-body text-white justify-center">
+                            <h5 class="text-2xl font-bold">Rokib Hossain</h5>
+                            <p>Fruits Expert</p>
+                            <div class="space-x-1">
+                                <i class="bg-background-pink p-2 rounded-full  fa-brands fa-facebook"></i>
+                                <i class="bg-background-pink p-2 rounded-full fa-brands fa-twitter"></i>
+                                <i class="bg-background-pink p-2 rounded-full fa-brands fa-linkedin-in"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 4th card -->
+                    <div class="card p-5 text-center shadow-xl">
+                        <figure><img src="images/member4.png" /></figure>
+                        <div class="card-body text-white justify-center">
+                            <h5 class="text-2xl font-bold">Chaity</h5>
+                            <p>Fruits Expert</p>
+                            <div class="space-x-1">
+                                <i class="bg-background-pink p-2 rounded-full  fa-brands fa-facebook"></i>
+                                <i class="bg-background-pink p-2 rounded-full fa-brands fa-twitter"></i>
+                                <i class="bg-background-pink p-2 rounded-full fa-brands fa-linkedin-in"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
     <footer>
