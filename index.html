@@ -23,8 +23,6 @@
         }
 
         .team-background {
-            /* background-image: url(images/banner1.png); */
-            /* background: linear-gradient(rgba(18, 18, 18, 0.70), #171717da), url(images/banner1.png); */
             background: linear-gradient(rgba(255, 255, 255, 0), #000000c9), url(images/banner1.png);
             background-size: cover;
         }
@@ -67,7 +65,7 @@
                 </div>
                 <div class="navbar-center hidden lg:flex">
                     <img src="images/logo.png" alt="">
-                    <h3 class="text-4xl lg:text-white">Fruit Burst</h3>
+                    <h3 class="text-4xl font-bold lg:text-white">Fruit Burst</h3>
                 </div>
                 <div class="navbar-end relative">
                     <input type="text" placeholder="Search here"
@@ -183,7 +181,7 @@
             </div>
         </section>
     </header>
-    <main class="container mx-auto mt-32">
+    <main class="container mx-auto mt-32 mb-32">
         <!-- Deal of the day -->
         <section class="flex text-center md:text-start flex-col lg:flex-row justify-between mb-12">
             <div class="space-y-4 mb-8">
@@ -620,7 +618,7 @@
             </div>
         </section>
         <!-- Why choose us section -->
-        <section class="mb-4 mx-2">
+        <section class="mx-2">
             <div class="text-center pt-8 mb-16 lg:pt-28 space-y-5">
                 <h2 class="text-xl md:text-3xl lg:text-5xl font-extrabold">Why Choose Us</h2>
                 <p class="text-sm lg:text-base">Contrary to popular belief, is not simply random text. It has roots in a
@@ -689,7 +687,7 @@
                         </div>
                         <div class="space-y-3 relative">
                             <h4 class="text-2xl font-extrabold">Sustainable Practice</h4>
-                             <div style="height: 2px;"
+                            <div style="height: 2px;"
                                 class="absolute top-[30%] left-[50%] md:left-auto -translate-x-2/4 md:translate-x-0 md:right-0 w-24 block bg-gray-700">
                             </div>
                             <p class="pt-4">Professional employees are there for you to pick the most amazing and fresh
@@ -710,13 +708,36 @@
                         </div>
                     </div>
                 </div>
-
             </div>
         </section>
     </main>
-    <footer>
-
+    <!-- Footer Section -->
+    <footer class="footer footer-center p-10 bg-slate-950 text-base-content text-white">
+        <div class="flex font-bold">
+            <img src="images/logo.png" alt="">
+            <h3 class="text-2xl md:text-3xl">Fruit Burst</h3>
+        </div>
+        <nav class="grid grid-flow-col text-sm md:text-lg font-semibold md:gap-12">
+            <a class="link link-hover">Home</a>
+            <a class="link link-hover">About us</a>
+            <a class="link link-hover">Shop</a>
+            <a class="link link-hover">All Fruits</a>
+            <a class="link link-hover">Support</a>
+            <a class="link link-hover">My Account</a>
+        </nav>
+        <nav>
+            <div class="grid grid-flow-col text-4xl gap-6">
+                <a href=""><i class="fa-brands fa-twitter"></i></a>
+                <a href=""><i class="fa-brands fa-facebook"></i></a>
+                <a href=""><i class="fa-brands fa-youtube"></i></a>
+                <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-apple"></i></a>
+            </div>
+        </nav>
+        <aside>
+            <p>@2023, All rights reserved | Mahin Hasan</p>
+        </aside>
     </footer>
-</body>
 
 </html>
